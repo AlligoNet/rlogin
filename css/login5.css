@@ -1,0 +1,32 @@
+.error {
+	color: red;
+}
+
+* { margin:0; padding:0; }
+
+body {
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+table, th, td {
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+a{
+	color: white;
+}
+
+.userTable {
+	width: 100%;
+}
+
+.statusbar {
+	width: 100%;
+	color: white;
+	background: -webkit-linear-gradient(black, gray); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(black, gray); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(black, gray); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(black, gray); /* Standard syntax */
+	border: 1px solid black;
+}
