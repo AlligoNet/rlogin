@@ -56,6 +56,11 @@ session_start();
 					if(!isset($emailerr) && !isset($nameerr)){
 						//user does not exist; continue
 						$insertUser = $conn->prepare("INSERT INTO radcheck (username, attribute, op, value) VALUES (?, 'Cleartext-Password', ':=', ?)");
+						/*
+						* inb4 >storing plaintext in db
+						* We know; compatibility issues prevent normal use of hashed passwords for the VPN
+						* Replacement key-based workaround backend is in place; one client update away from implementation.
+						*/
 						$insertUser->bind_param("ss", $username, $password);
 						$insertUser->execute();
 						$insertUser->close();
