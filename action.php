@@ -5,7 +5,7 @@ session_start();
 <html>
 	<body>
 		<?php
-			if($_SESSION["status"] === 'admin'){
+			if($_SESSION["status"] === 'admin' && ($_SERVER['HTTP_REFERER'] === 'https://register.crdnl.me/admin.php' || $_SERVER['HTTP_REFERER'] === 'http://register.crdnl.me/admin.php')){
 				$username = $_GET["user"];
 				$action = $_GET["action"];
 				include 'config/db_credentials.php';
