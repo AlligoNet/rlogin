@@ -224,7 +224,7 @@ session_start();
             <input type="password" name="password" required autocomplete="off"/>
           </div>
 
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <p class="forgot"><a href="forgot.php">Forgot Password?</a></p>
 
           <button class="button button-block">Log In</button>
 
