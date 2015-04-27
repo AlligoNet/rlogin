@@ -43,6 +43,7 @@ session_start();
 						$setDirect2->bind_param("ss", $pwhash, $username);
 						$setDirect2->execute();
 						$setDirect2->close();
+						echo "Your password has been changed successfully.";
 					}
 				}
 				else{
@@ -64,9 +65,6 @@ session_start();
 	</head>
 
 	<body>
-		<?php
-		echo "Your password has been changed successfully.";
-		?>
 		<br><a href="controlpanel.php">Back to settings</i></a>
 	</body>
 
